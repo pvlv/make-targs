@@ -1,9 +1,7 @@
-WATCHLOG := build/log
 LOG_FILE := log
-WLG := $(WATCHLOG)/$(LOG_FILE)
 
-$(WLG):
-	@mkdir -p $(WATCHLOG)
+$(WATCHLOG_DIR)/$(LOG_FILE):
+	@mkdir -p $(WATCHLOG_DIR)
 	@touch $@
 
-_wlg: $(WLG)
+_watchlog: $(WATCHLOG_DIR)/$(LOG_FILE)

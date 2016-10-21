@@ -1,4 +1,4 @@
-$(WATCHLOG)/$(NODE_MODULES_DIR): $(WLG) package.json
+$(WATCHLOG_DIR)/$(NODE_MODULES_DIR): _watchlog package.json
 	@docker run --rm \
 		-v $(CURDIR):$(WORK_DIR) \
 		-v $(NODE_CACHE_DIR) \
@@ -7,4 +7,4 @@ $(WATCHLOG)/$(NODE_MODULES_DIR): $(WLG) package.json
 		npm install
 	@touch $@
 
-_npm_install: $(WATCHLOG)/$(NODE_MODULES_DIR)
+_npm_install: $(WATCHLOG_DIR)/$(NODE_MODULES_DIR)

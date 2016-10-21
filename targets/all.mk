@@ -1,6 +1,7 @@
 PROJECT_NAME := make-targs
 APP_DIR := app
 WORK_DIR := /data
+WATCHLOG_DIR := build/log
 
 NODE_MODULES_DIR := node_modules
 NODE_CACHE_DIR := $$HOME/.node6-cache:/root/.npm
@@ -13,7 +14,7 @@ PORT :=
 help:
 	@echo "docker_container"
 	@echo "npm_install"
-	@echo "$(WATCHLOG)"
+	@echo "watchlog"
 	@echo "in"
 	@echo "exec_in"
 
