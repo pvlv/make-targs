@@ -21,11 +21,11 @@ PORT := 5757:5757
 #!                     info: make _watchlog_info
 -include $(TARGETS_PATH)/watchlog.mk
 
-#! _npm_install        Загружает npm зависимости
+#! _npm_install        Загрузить npm зависимости
 #!                     info: make _npm_install_info
 -include $(TARGETS_PATH)/npm_install.mk
 
-#! _in                 Запускает контейнер c bash в интерактивном режиме
+#! _in                 Запустить контейнер c bash в интерактивном режиме
 #!                     info: make _in_info
 -include $(TARGETS_PATH)/in.mk
 
@@ -34,6 +34,6 @@ PORT := 5757:5757
 #!                     info: make _exec_info
 -include $(TARGETS_PATH)/exec.mk
 
-#! _exec_in            Для подключения к запущенному контейнеру(in таргет)
+#! _exec_in            Подключиться к запущенному контейнеру in
 #!                     info: make _exec_in_info
 -include $(TARGETS_PATH)/exec_in.mk
