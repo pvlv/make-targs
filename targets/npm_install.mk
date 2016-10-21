@@ -1,4 +1,4 @@
-$(WATCHLOG_DIR)/$(NODE_MODULES_DIR): _watchlog package.json
+$(WATCHLOG_DIR)/$(NODE_MODULES_DIR): $(WLG) package.json
 	@docker run --rm \
 		-v $(CURDIR):$(DCWORK_DIR) \
 		-v $(NODE_CACHE_DIR) \
