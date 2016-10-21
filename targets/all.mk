@@ -9,7 +9,7 @@ NODE_DOCKER_IMAGE := node:6.5
 
 TARGETS_PATH := node_modules/make-targs/targets
 
-PORT :=
+PORT := 5757:5757
 
 help:
 	@echo "docker_container"
