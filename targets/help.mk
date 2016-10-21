@@ -8,5 +8,12 @@ help:
 	@echo " NODE_DOCKER_IMAGE: $(NODE_DOCKER_IMAGE)"
 	@echo " PORT: $(PORT) \n"
 	@echo " *** HELP ***\n"
+	@grep -e "^#!" Makefile | cut -c3-
+	@echo ""
+	@echo " help_all            Посмотреть описание таргетов из make-targs репозитория"
+	@echo "-------------------------------------"
+
+help_all:
+	@echo "-------------------------------------"
 	@grep -e "^#!" $(TARGETS_PATH)/all.mk | cut -c3-
 	@echo "-------------------------------------"
