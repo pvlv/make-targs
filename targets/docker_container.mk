@@ -1,3 +1,21 @@
+#!
+#! _docker_container:
+#! Для создания docker контейнера
+#!
+#! ?DCFLAGS (default, --rm)
+#! - опции для запуска контейнера
+#! ?DCNAME
+#! - имя для нового контейнера
+#! ?DCLINK
+#! - линк с другим контейнером
+#! ?DCPORT
+#! - проброс порта из контейнера в локальный хост
+#! ?DCCMD
+#! - выполнить команду при запуске контейнера
+#! 
+#! ---
+#! подробнее: https://docs.docker.com/engine/reference/commandline/run/
+
 DCFLAGS := --rm
 DCNAME :=
 DCLINK :=
@@ -14,3 +32,6 @@ _docker_container:
 		$(if $(filter $(DCPORT), $(DCPORT)), -p $(DCPORT)) \
 		$(NODE_DOCKER_IMAGE) \
 		$(DCCMD)
+
+_docker_container_info:
+	@grep -e "^#!" $(TARGETS_PATH)/docker_container.mk | cut -c3-
