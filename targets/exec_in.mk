@@ -1,2 +1,3 @@
-exec_in:
-	@docker exec -it $(PROJECT_NAME)_in bash
+exec_in: DCNAME := $(PROJECT_NAME)_in
+exec_in: DCCMD := bash
+exec_in: exec
