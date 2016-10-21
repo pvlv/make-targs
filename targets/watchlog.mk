@@ -5,3 +5,5 @@ WLG := $(WATCHLOG)/$(LOG_FILE)
 $(WLG):
 	@mkdir -p $(WATCHLOG)
 	@touch $@
+
+_wlg: $(WLG)

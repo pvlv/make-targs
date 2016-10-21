@@ -4,7 +4,7 @@ DCLINK :=
 DCPORT := 
 DCCMD :=
 
-docker_container:
+_docker_container:
 	@docker run $(DCFLAGS) \
 		$(if $(filter $(DCNAME), $(DCNAME)), --name $(PROJECT_NAME)_$(DCNAME)) \
 		-v $(CURDIR):$(WORK_DIR) \

@@ -1,2 +1,2 @@
-exec:
-	@docker exec -it $(DCNAME) $(DCCMD)
+_exec:
+	@docker exec -it $(TO_DCNAME) $(DCCMD)

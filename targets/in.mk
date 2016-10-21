@@ -1,5 +1,5 @@
-in: DCFLAGS := --rm -it
-in: DCNAME := in
-in: DCPORT := $(PORT)
-in: DCCMD := bash
-in: docker_container
+_in: DCFLAGS := --rm -it
+_in: DCNAME := in
+_in: DCPORT := $(PORT)
+_in: DCCMD := bash
+_in: _docker_container

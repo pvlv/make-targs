@@ -1,3 +1,3 @@
-exec_in: DCNAME := $(PROJECT_NAME)_in
-exec_in: DCCMD := bash
-exec_in: exec
+_exec_in: TO_DCNAME := $(PROJECT_NAME)_in
+_exec_in: DCCMD := bash
+_exec_in: _exec

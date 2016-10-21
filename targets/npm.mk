@@ -8,3 +8,5 @@ $(NPM): $(WLG) package.json
 		$(NODE_DOCKER_IMAGE) \
 		npm install
 	@touch $@
+
+_npm: $(NPM)
