@@ -1,8 +1,8 @@
 $(WATCHLOG_DIR)/$(NODE_MODULES_DIR): _watchlog package.json
 	@docker run --rm \
-		-v $(CURDIR):$(WORK_DIR) \
+		-v $(CURDIR):$(DCWORK_DIR) \
 		-v $(NODE_CACHE_DIR) \
-		-w $(WORK_DIR) \
+		-w $(DCWORK_DIR) \
 		$(NODE_DOCKER_IMAGE) \
 		npm install
 	@touch $@

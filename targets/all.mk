@@ -1,6 +1,6 @@
 PROJECT_NAME := make-targs
 APP_DIR := app
-WORK_DIR := /data
+DCWORK_DIR := /data
 WATCHLOG_DIR := build/log
 
 NODE_MODULES_DIR := node_modules
