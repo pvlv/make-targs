@@ -12,14 +12,14 @@ PORT :=
 
 help:
 	@echo "docker_container"
-	@echo "$(NPM)"
+	@echo "npm_install"
 	@echo "$(WATCHLOG)"
 	@echo "in"
 	@echo "exec_in"
 
 include $(TARGETS_PATH)/docker_container.mk
 include $(TARGETS_PATH)/watchlog.mk
-include $(TARGETS_PATH)/npm.mk
+include $(TARGETS_PATH)/npm_install.mk
 include $(TARGETS_PATH)/in.mk
 include $(TARGETS_PATH)/exec.mk
 include $(TARGETS_PATH)/exec_in.mk
